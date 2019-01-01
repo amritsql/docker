@@ -10,4 +10,4 @@ services:
     - './jenkins_data:/var'
 volumes:
   jenkins_data:
-    driver: loca
+    driver: local
