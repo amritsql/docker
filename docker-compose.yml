@@ -1,13 +1,13 @@
-version: '2'
+version: '2.1'
 services:
   jenkins:
-    image: 'jenkins/jenkins:2.148-slim'
+    image: 'amrit96/jenkins:latest'
     ports:
       - '80:8080'
       - '443:8443'
       - '50000:50000'
     volumes:
-    - './jenkins_data:/var'
+    - './jenkins_data:/var/jenkins_home'
 volumes:
-  jenkins_data:
-    driver: local
+    jenkins_data:
+        driver: local
